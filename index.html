@@ -3,6 +3,8 @@
 <head>
     <title>Brew & Bite</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
             margin: 0;
@@ -15,7 +17,7 @@
         header {
             background: #3e2723;
             color: white;
-            padding: 50px 20px;
+            padding: 60px 20px;
         }
 
         header h1 {
@@ -28,7 +30,13 @@
         }
 
         section {
-            padding: 30px 20px;
+            padding: 40px 20px;
+        }
+
+        .hero-img {
+            width: 500px;
+            max-width: 90%;
+            border-radius: 20px;
         }
 
         .menu {
@@ -38,6 +46,7 @@
             margin: 10px;
             padding: 20px;
             border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
         .menu h3 {
@@ -64,6 +73,24 @@
             color: white;
             padding: 20px;
         }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 36px;
+            }
+
+            header p {
+                font-size: 17px;
+            }
+
+            .menu {
+                width: 80%;
+            }
+
+            section {
+                padding: 30px 15px;
+            }
+        }
     </style>
 </head>
 
@@ -73,19 +100,22 @@
         <h1>☕ Brew & Bite</h1>
         <p>Fresh Coffee • Delicious Food • Great Moments</p>
     </header>
-<section>
-    <h2>Welcome to Brew & Bite ❤️</h2>
 
-    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93"
-         width="500"
-         style="max-width:90%; border-radius:20px;">
+    <section>
+        <h2>Welcome to Brew & Bite ❤️</h2>
 
-   <br>
+        <img class="hero-img"
+             src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
 
-<a class="button" href="https://wa.me/919876543210">
-    💬 Order on WhatsApp
-</a>
-</section>
+        <p>Your cozy place for delicious food and fresh coffee.</p>
+
+        <br>
+
+        <a class="button" href="https://wa.me/919876543210">
+            💬 Order on WhatsApp
+        </a>
+    </section>
+
     <section>
         <h2>Our Menu</h2>
 
@@ -117,7 +147,7 @@
     <section>
         <h2>Visit Us</h2>
         <p>📍 Kochi, Kerala</p>
-        <p>📞 9876543210</p>
+        <p>📞 000000010</p>
 
         <br>
 
